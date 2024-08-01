@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  min-width: 375px;
+  /* width: 25%; */
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border: 5px solid black;
+  padding: 0 2em;
+}
+
+#bmi-index-container {
+  width: 30%;
+  display: flex;
+  height: 450;
+  align-items: center;
+}
+
+#bmi-index-container img {
+  width: 140%;
+}
+
+form {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+h1 {
+  align-self: center;
+}
+#name-container {
+  display: flex;
+  width: 80%;
+}
+
+#data-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+#output-container {
+  display: flex;
+  height: 15%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.data-subcontainer {
+  width: 40%;
+}
+
+@media (max-width: 950px) {
+  body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+    gap: 3em;
+  }
+  #bmi-index-container {
+    min-width: 380px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #bmi-index-container img {
+    width: 80%;
+  }
+}
